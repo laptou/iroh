@@ -1,0 +1,27 @@
+[package]
+name = "iroh-ble"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+btleplug = "0.11"
+ble-peripheral-rust = "0.1"
+bytes = "1"
+futures-util = "0.3"
+iroh = { path = "../iroh" }
+iroh-base = { path = "../iroh-base" }
+n0-future = "0.3"
+n0-watcher = "0.6"
+tokio = { version = "1", features = ["io-util", "macros", "rt", "sync", "time"] }
+uuid = "1"
+quinn-udp = { package = "iroh-quinn-udp", version = "0.8" }
+tracing = "0.1"
+data-encoding = "2.10.0"
+
+[dev-dependencies]
+anyhow = "1"
+tokio-test = "0.4"
+tracing-subscriber = "0.3"
+
+[lints]
+workspace = true
